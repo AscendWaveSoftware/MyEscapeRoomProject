@@ -43,7 +43,7 @@
             bool validInput = false; // Überprüft, ob die Eingabe gültig ist
             while (!validInput)
             {
-                Console.Write("Bitte gib die Breite des Raums (mindestens 5 und maximal 100) ein: ");
+                Console.Write("Bitte gib die Breite des Raums (mindestens 5 und maximal 100) ein: "); // 4 als Minimum funktioniert faktisch, schränkt die Spielfläche allerdings zu sehr ein
                 if(int.TryParse(Console.ReadLine(), out width) && width >= 5 && width <= 100)
                 {
                     Console.Write("Bitte gib die Höhe des Raums (mindestens 5 und maximal 25) ein: ");
